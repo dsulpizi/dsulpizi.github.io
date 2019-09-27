@@ -1,0 +1,146 @@
+.red {
+  color: #ec2d23;
+}
+.purple {
+  color: #7c5394;
+}
+.white {
+  color: black;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 160%;
+}
+#contents {
+  width: 60%;
+  margin: 1% 20%;
+  padding: 20px 50px;
+}
+#country {
+  width: 80%;
+  margin: 0 10%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Lobster Two', cursive;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+.team {
+  display: flex;
+  justify-content: center;
+  font-family: 'Lobster Two', cursive;
+}
+.team .soldier {
+  flex: 0 0 200px;
+}
+.team .soldier img {
+  width: 200px;
+}
+.team .soldier p {
+  text-align: center;
+  margin: 0 0 0 40px;
+}
+.flip img {
+  transform: scaleX(-1);
+}
+.flip.soldier p {
+  margin: 0 40px 0 0;
+}
+.flipper {
+  transform: scaleX(-1);
+}
+.vs {
+  color: #ec2d23;
+  font-family: 'Lobster Two', cursive;
+  display: inline-block;
+  font-size: 150%;
+  margin: 0 1.5%;
+}
+.and {
+  font-weight: 600;
+  display: inline-block;
+  font-size: 70%;
+  margin: 0 0.2%;
+}
+.rules {
+  font-size: 50%;
+  margin: 0 5%;
+}
+.reward {
+  width: 50%;
+  margin: 0 25%;
+}
+.highlight {
+  width: 20%;
+  margin: 0 40%;
+}
+.joust {
+  width: 20%;
+}
+.crown {
+  width: 30%;
+  margin: 0 35%;
+}
+.box {
+  margin: 40px 0;
+  padding: 20px 0;
+}
+.facing {
+  text-align: center;
+}
+.red_back {
+  background: #fce0de;
+}
+.white_back {
+  background: #e6e3e3;
+}
+.purple_back {
+  background: #d9cae1;
+}
+.blue_back {
+  background: #e8e9fb;
+}
+.fade {
+  opacity: 0.4;
+}
+.points {
+  color: #343ce0;
+  position: relative;
+  top: -0.5em;
+  font-size: 80%;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.battles {
+  padding: 2% 7%;
+  font-size: 0.6em;
+}
+table {
+  font-size: 66%;
+  width: 100%;
+}
+table th,
+table td {
+  text-align: left;
+  margin: 5px;
+  padding: 15px;
+}
+table th,
+table tr:nth-child(2n+1) {
+  background: rgba(0, 0, 0, 0.1);
+}
+table tr:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
