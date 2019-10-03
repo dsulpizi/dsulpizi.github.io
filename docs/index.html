@@ -12,8 +12,770 @@
         <h1>Football Fiefdom Free-for-All</h1>
         <div class="box blue_back">
             <h2>Week 4 Battlefield</h2>
-            <h3><span class="red">14</span> : <span class="white">1</span> : <span class="purple">9</span></h3>
-            <img id="country" src="images/countrywk3.png" />
+            <h3><span class="red">14</span> : <span class="white">0</span> : <span class="purple">10</span></h3>
+            <canvas id='country' width=1161 height=899>
+	<script>
+		white = "#f9f9f9";
+		red = "#ec2d23";
+		purple = "#7c5394";
+		ctx = document.getElementById('country').getContext('2d');
+		ctx.lineWidth = 10;//12;
+		ctx.lineCap = 'round';
+		ctx.lineJoin = 'round';
+		
+		// lakes
+		ctx.fillStyle = '#88c3d4';
+		ctx.beginPath();
+		ctx.moveTo(535,326);
+		ctx.lineTo(856,435);
+		ctx.lineTo(771,554);
+		ctx.lineTo(508,534);
+		ctx.lineTo(535,326);
+		ctx.closePath();
+		ctx.fill();
+		
+		// bcalberta
+		ctx.fillStyle = red;
+		ctx.beginPath();
+		ctx.moveTo(25,5);
+		ctx.lineTo(210,75);
+		ctx.lineTo(330,105);
+		ctx.lineTo(285,345);
+		ctx.lineTo(220,330);
+		ctx.lineTo(97,297);
+		ctx.lineTo(72,240);
+		ctx.lineTo(50,230);
+		ctx.lineTo(48,209);
+		ctx.lineTo(63,204);
+		ctx.lineTo(62,192);
+		ctx.lineTo(53,193);
+		ctx.lineTo(52,164);
+		ctx.lineTo(37,164);
+		ctx.lineTo(34,153);
+		ctx.lineTo(50,127);
+		ctx.lineTo(55,102);
+		ctx.lineTo(39,82);
+		ctx.lineTo(38,34);
+		ctx.lineTo(25,5);
+		
+		ctx.moveTo(37,239);
+		ctx.lineTo(67,271);
+		ctx.lineTo(75,295);
+		ctx.lineTo(60,290);
+		ctx.lineTo(40,259);
+		ctx.lineTo(37,239);
+		
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+
+		// saskatchewanmanitoba
+		ctx.fillStyle = red;
+		ctx.beginPath();
+		ctx.moveTo(330,105);
+		ctx.lineTo(426,118);
+		ctx.lineTo(514,123);
+		ctx.lineTo(513,138);
+		ctx.lineTo(526,150);
+		ctx.lineTo(531,145);
+		ctx.lineTo(543,173);
+		ctx.lineTo(539,188);
+		ctx.lineTo(565,183);
+		ctx.lineTo(589,188); // ontario NW border
+		ctx.lineTo(510,279); // ontario W border
+		ctx.lineTo(514,365); // ontario SW border
+		ctx.lineTo(412,362); // dakotas S border
+		ctx.lineTo(285,345); // bcalberta E border
+		ctx.lineTo(330,105); 
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+		
+		// ontario
+		ctx.fillStyle = purple;
+		ctx.beginPath();
+		ctx.moveTo(589,188);
+		ctx.lineTo(614,207);
+		ctx.lineTo(651,219);
+		ctx.lineTo(689,222);
+		ctx.lineTo(696,251);
+		ctx.lineTo(704,277);
+		ctx.lineTo(719,289);
+		ctx.lineTo(738,297); // quebec start
+		ctx.lineTo(757,384);
+		ctx.lineTo(773,403);
+		ctx.lineTo(798,408);
+		ctx.lineTo(815,416);
+		ctx.lineTo(841,407);
+		ctx.lineTo(850,417); //quebec ends newenglandmaritimes starts
+		ctx.lineTo(826,441); // lake ontario 
+		ctx.lineTo(795,459); 
+		ctx.lineTo(775,465); 
+		ctx.lineTo(771,476); 
+		ctx.lineTo(773,489); 
+		ctx.lineTo(762,494); 
+		ctx.lineTo(759,500); 
+		ctx.lineTo(751,500); 
+		ctx.lineTo(726,515); 
+		ctx.lineTo(723,495); 
+		ctx.lineTo(736,483); 
+		ctx.lineTo(733,467); 
+		ctx.lineTo(741,453); 
+		ctx.lineTo(752,450); 
+		ctx.lineTo(763,449); 
+		ctx.lineTo(762,441); 
+		ctx.lineTo(740,422); 
+		ctx.lineTo(691,421); 
+		ctx.lineTo(670,393); 
+		ctx.lineTo(670,383); 
+		ctx.lineTo(654,382); 
+		ctx.lineTo(643,365); 
+		ctx.lineTo(632,368); 
+		ctx.lineTo(619,363); 
+		ctx.lineTo(603,377); 
+		ctx.lineTo(598,389); 
+		ctx.lineTo(513,364); 
+		ctx.lineTo(510,278); 
+		ctx.lineTo(589,188); 
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+		
+		// quebec
+		ctx.fillStyle = purple;
+		ctx.beginPath();
+		ctx.moveTo(738,297); // quebec start
+		ctx.lineTo(738,297); // quebec start
+		ctx.lineTo(751,290);
+		ctx.lineTo(754,275);
+		ctx.lineTo(744,259);
+		ctx.lineTo(739,242);
+		ctx.lineTo(728,222);
+		ctx.lineTo(745,210);
+		ctx.lineTo(752,197);
+		ctx.lineTo(759,178);
+		ctx.lineTo(752,154);
+		ctx.lineTo(741,136);
+		ctx.lineTo(723,127);
+		ctx.lineTo(734,100);
+		ctx.lineTo(716,47);
+		ctx.lineTo(753,50);
+		ctx.lineTo(765,38);
+		ctx.lineTo(781,41);
+		ctx.lineTo(797,58);
+		ctx.lineTo(821,58);
+		ctx.lineTo(835,101);
+		ctx.lineTo(847,98);
+		ctx.lineTo(862,108);
+		ctx.lineTo(879,88);
+		ctx.lineTo(880,60);
+		ctx.lineTo(889,57);
+		ctx.lineTo(925,91);
+		ctx.lineTo(947,105);
+		ctx.lineTo(935,116);
+		ctx.lineTo(961,126);
+		ctx.lineTo(975,137);
+		ctx.lineTo(1013,135);
+		ctx.lineTo(995,170);
+		ctx.lineTo(1028,148);
+		ctx.lineTo(1048,148);
+		ctx.lineTo(1056,167);
+		ctx.lineTo(1066,173);
+		ctx.lineTo(1035,205);
+		ctx.lineTo(1021,236);
+		ctx.lineTo(930,272);
+		ctx.lineTo(924,293);
+		ctx.lineTo(913,299);
+		ctx.lineTo(900,330);
+		ctx.lineTo(893,364);
+		ctx.lineTo(898,396);
+		ctx.lineTo(849,418);
+		ctx.lineTo(841,408);
+		ctx.lineTo(814,417);
+		ctx.lineTo(798,408);
+		ctx.lineTo(772,404);
+		ctx.lineTo(754,383);
+		ctx.lineTo(738,297);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();		
+		
+		// montanidaho
+		ctx.fillStyle = red;
+		ctx.beginPath();
+		ctx.moveTo(180,325);
+		ctx.lineTo(218,333);
+		ctx.lineTo(284,349);
+		ctx.lineTo(375,363);
+		ctx.lineTo(353,543);
+		ctx.lineTo(266,531);
+		ctx.lineTo(235,523);
+		ctx.lineTo(233,502);
+		ctx.lineTo(184,492);
+		ctx.lineTo(138,476);
+		ctx.lineTo(151,421);
+		ctx.lineTo(165,394);
+		ctx.lineTo(160,387);
+		ctx.lineTo(180,325);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();	
+		
+		// dakotas
+		ctx.fillStyle = red;
+		ctx.beginPath();
+		ctx.moveTo(375,363);
+		ctx.lineTo(413,366);
+		ctx.lineTo(483,370);
+		ctx.lineTo(489,494);
+		ctx.lineTo(484,520);
+		ctx.lineTo(504,575);
+		ctx.lineTo(387,572);
+		ctx.lineTo(388,548);
+		ctx.lineTo(354,543);
+		ctx.lineTo(375,363);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+		
+		// Coloransas
+		ctx.fillStyle = red;
+		ctx.beginPath();
+		ctx.moveTo(267,536);
+		ctx.lineTo(365,547);
+		ctx.lineTo(388,548);
+		ctx.lineTo(387,572);
+		ctx.lineTo(504,575);
+		ctx.lineTo(519,606);
+		ctx.lineTo(519,721);
+		ctx.lineTo(504,716);
+		ctx.lineTo(465,717);
+		ctx.lineTo(416,697);
+		ctx.lineTo(415,656);
+		ctx.lineTo(362,651);
+		ctx.lineTo(361,640);
+		ctx.lineTo(250,623);
+		ctx.lineTo(263,572);
+		ctx.lineTo(267,536);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+		
+		// Texas
+		ctx.fillStyle = red;
+		ctx.beginPath();
+		ctx.moveTo(362,651);
+		ctx.lineTo(415,656);
+		ctx.lineTo(416,697);
+		ctx.lineTo(465,717);
+		ctx.lineTo(504,716);
+		ctx.lineTo(530,730);
+		ctx.lineTo(529,756);
+		ctx.lineTo(539,786);
+		ctx.lineTo(534,810);
+		ctx.lineTo(521,816);
+		ctx.lineTo(510,814);
+		ctx.lineTo(490,835);
+		ctx.lineTo(466,846);
+		ctx.lineTo(454,874);
+		ctx.lineTo(460,893);
+		ctx.lineTo(425,887);
+		ctx.lineTo(386,814);
+		ctx.lineTo(370,804);
+		ctx.lineTo(353,806);
+		ctx.lineTo(341,819);
+		ctx.lineTo(315,798);
+		ctx.lineTo(281,749);
+		ctx.lineTo(348,752);
+		ctx.lineTo(362,651);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();	
+		
+		// New Mexizona
+		ctx.fillStyle = red;
+		ctx.beginPath();
+		ctx.moveTo(162,606);
+		ctx.lineTo(251,624);
+		ctx.lineTo(362,642);
+		ctx.lineTo(348,752);
+		ctx.lineTo(218,749);
+		ctx.lineTo(222,750);
+		ctx.lineTo(182,740);
+		ctx.lineTo(124,695);
+		ctx.lineTo(142,661);
+		ctx.lineTo(135,638);
+		ctx.lineTo(148,623);
+		ctx.lineTo(157,631);
+		ctx.lineTo(162,606);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();	
+		
+		// Nevadutah
+		ctx.fillStyle = red;
+		ctx.beginPath();
+		ctx.moveTo(87,466);
+		ctx.lineTo(184,492);
+		ctx.lineTo(232,503);
+		ctx.lineTo(233,523);
+		ctx.lineTo(266,532);
+		ctx.lineTo(263,574);
+		ctx.lineTo(250,618);
+		ctx.lineTo(163,606);
+		ctx.lineTo(157,629);
+		ctx.lineTo(149,622);
+		ctx.lineTo(133,639);
+		ctx.lineTo(96,583);
+		ctx.lineTo(70,526);
+		ctx.lineTo(87,466);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+		
+		// Washingtoregon
+		ctx.fillStyle = red;
+		ctx.beginPath();
+		ctx.moveTo(98,302);
+		ctx.lineTo(180,324);
+		ctx.lineTo(161,387);
+		ctx.lineTo(165,395);
+		ctx.lineTo(152,423);
+		ctx.lineTo(140,475);
+		ctx.lineTo(22,442);
+		ctx.lineTo(21,441);
+		ctx.lineTo(52,375);
+		ctx.lineTo(62,350);
+		ctx.lineTo(63,306);
+		ctx.lineTo(82,318);
+		ctx.lineTo(80,332);
+		ctx.lineTo(84,336);
+		ctx.lineTo(95,324);
+		ctx.lineTo(98,302);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+		
+		// California
+		ctx.fillStyle = red;
+		ctx.beginPath();
+		ctx.moveTo(21,442);
+		ctx.lineTo(88,466);
+		ctx.lineTo(69,526);
+		ctx.lineTo(96,581);
+		ctx.lineTo(133,637);
+		ctx.lineTo(141,660);
+		ctx.lineTo(124,695);
+		ctx.lineTo(88,692);
+		ctx.lineTo(77,679);
+		ctx.lineTo(72,659);
+		ctx.lineTo(56,648);
+		ctx.lineTo(46,635);
+		ctx.lineTo(28,628);
+		ctx.lineTo(31,613);
+		ctx.lineTo(22,601);
+		ctx.lineTo(21,584);
+		ctx.lineTo(17,562);
+		ctx.lineTo(20,556);
+		ctx.lineTo(20,538);
+		ctx.lineTo(11,538);
+		ctx.lineTo(6,515);
+		ctx.lineTo(9,491);
+		ctx.lineTo(4,483);
+		ctx.lineTo(21,442);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+		
+		// minnesota
+		ctx.fillStyle = red;
+		ctx.beginPath();
+		ctx.moveTo(488,370);
+		ctx.lineTo(514,370);
+		ctx.lineTo(596,391);
+		ctx.lineTo(573,402);
+		ctx.lineTo(562,420);
+		ctx.lineTo(579,417);
+		ctx.lineTo(590,421);
+		ctx.lineTo(607,411);
+		ctx.lineTo(618,409);
+		ctx.lineTo(633,418);
+		ctx.lineTo(643,422);
+		ctx.lineTo(657,414);
+		ctx.lineTo(679,413);
+		ctx.lineTo(688,422);
+		ctx.lineTo(664,427);
+		ctx.lineTo(642,437);
+		ctx.lineTo(628,465);
+		ctx.lineTo(635,463);
+		ctx.lineTo(633,492);
+		ctx.lineTo(637,511);
+		ctx.lineTo(587,515);
+		ctx.lineTo(577,510);
+		ctx.lineTo(572,497);
+		ctx.lineTo(495,495);
+		ctx.lineTo(488,370);		
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+		
+		// illinois
+		ctx.fillStyle = red;
+		ctx.beginPath();
+		ctx.moveTo(495,495);
+		ctx.lineTo(572,497);
+		ctx.lineTo(577,510);
+		ctx.lineTo(587,515);
+		ctx.lineTo(637,511);
+		ctx.lineTo(645,531);
+		ctx.lineTo(646,594);
+		ctx.lineTo(640,616);
+		ctx.lineTo(639,632);
+		ctx.lineTo(618,644);
+		ctx.lineTo(618,652);
+		ctx.lineTo(606,670);
+		ctx.lineTo(600,670);
+		ctx.lineTo(600,658);
+		ctx.lineTo(523,661);
+		ctx.lineTo(522,608);
+		ctx.lineTo(506,577);
+		ctx.lineTo(486,520);
+		ctx.lineTo(495,495);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+		
+		// louisarkansas
+		ctx.fillStyle = red;
+		ctx.beginPath();
+		ctx.moveTo(522,661);
+		ctx.lineTo(599,658);
+		ctx.lineTo(601,669);
+		ctx.lineTo(606,672);
+		ctx.lineTo(605,689);
+		ctx.lineTo(586,719);
+		ctx.lineTo(586,745);
+		ctx.lineTo(592,755);
+		ctx.lineTo(577,774);
+		ctx.lineTo(578,779);
+		ctx.lineTo(615,784);
+		ctx.lineTo(621,798);
+		ctx.lineTo(615,803);
+		ctx.lineTo(608,818);
+		ctx.lineTo(591,823);
+		ctx.lineTo(573,810);
+		ctx.lineTo(558,817);
+		ctx.lineTo(535,808);
+		ctx.lineTo(539,786);
+		ctx.lineTo(527,758);
+		ctx.lineTo(532,729);
+		ctx.lineTo(519,723);
+		ctx.lineTo(522,661);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();		
+		
+		// Ohikentucky
+		ctx.fillStyle = purple;
+		ctx.beginPath();
+		ctx.moveTo(644,531);
+		ctx.lineTo(654,526);
+		ctx.lineTo(715,523);
+		ctx.lineTo(722,531);
+		ctx.lineTo(737,526);
+		ctx.lineTo(760,514);
+		ctx.lineTo(767,561);
+		ctx.lineTo(750,579);
+		ctx.lineTo(745,593);
+		ctx.lineTo(737,600);
+		ctx.lineTo(748,616);
+		ctx.lineTo(737,633);
+		ctx.lineTo(730,641);
+		ctx.lineTo(759,641);
+		ctx.lineTo(754,650);
+		ctx.lineTo(740,656);
+		ctx.lineTo(725,666);
+		ctx.lineTo(717,682);
+		ctx.lineTo(605,689);
+		ctx.lineTo(604,672);
+		ctx.lineTo(619,652);
+		ctx.lineTo(618,645);
+		ctx.lineTo(638,632);
+		ctx.lineTo(639,616);
+		ctx.lineTo(646,600);
+		ctx.lineTo(644,531);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();	
+		
+		// Michigan
+		ctx.fillStyle = purple;
+		ctx.beginPath();
+		ctx.moveTo(654,524);
+		ctx.lineTo(659,508);
+		ctx.lineTo(656,488);
+		ctx.lineTo(660,454);
+		ctx.lineTo(666,457);
+		ctx.lineTo(669,450);
+		ctx.lineTo(676,438);
+		ctx.lineTo(687,439);
+		ctx.lineTo(701,448);
+		ctx.lineTo(704,463);
+		ctx.lineTo(695,477);
+		ctx.lineTo(699,483);
+		ctx.lineTo(713,475);
+		ctx.lineTo(721,496);
+		ctx.lineTo(724,515);
+		ctx.lineTo(712,522);
+		ctx.lineTo(654,524);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();	
+		
+		// Missibama
+		ctx.fillStyle = purple;
+		ctx.beginPath();
+		ctx.moveTo(606,692);
+		ctx.lineTo(687,684);
+		ctx.lineTo(709,749);
+		ctx.lineTo(707,771);
+		ctx.lineTo(671,778);
+		ctx.lineTo(671,787);
+		ctx.lineTo(622,797);
+		ctx.lineTo(616,783);
+		ctx.lineTo(577,779);
+		ctx.lineTo(577,774);
+		ctx.lineTo(592,754);
+		ctx.lineTo(585,744);
+		ctx.lineTo(585,717);
+		ctx.lineTo(606,692);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();	
+
+		
+		// Georgia
+		ctx.fillStyle = purple;
+		ctx.beginPath();
+		ctx.moveTo(687,684);
+		ctx.lineTo(735,680);
+		ctx.lineTo(748,673);
+		ctx.lineTo(771,670);
+		ctx.lineTo(784,677);
+		ctx.lineTo(806,676);
+		ctx.lineTo(827,689);
+		ctx.lineTo(815,712);
+		ctx.lineTo(795,731);
+		ctx.lineTo(780,767);
+		ctx.lineTo(782,773);
+		ctx.lineTo(721,778);
+		ctx.lineTo(708,772);
+		ctx.lineTo(707,748);
+		ctx.lineTo(687,684);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+		
+		// Florida
+		ctx.fillStyle = purple;
+		ctx.beginPath();
+		ctx.moveTo(671,778);
+		ctx.lineTo(708,772);
+		ctx.lineTo(721,778);
+		ctx.lineTo(782,773);
+		ctx.lineTo(786,785);
+		ctx.lineTo(831,856);
+		ctx.lineTo(826,880);
+		ctx.lineTo(821,890);
+		ctx.lineTo(797,877);
+		ctx.lineTo(771,851);
+		ctx.lineTo(761,813);
+		ctx.lineTo(729,791);
+		ctx.lineTo(721,799);
+		ctx.lineTo(707,799);
+		ctx.lineTo(701,789);
+		ctx.lineTo(671,785);
+		ctx.lineTo(671,778);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+
+		// carolinas
+		ctx.fillStyle = purple;
+		ctx.beginPath();
+		ctx.moveTo(748,616);
+		ctx.lineTo(754,621);
+		ctx.lineTo(769,620);
+		ctx.lineTo(782,610);
+		ctx.lineTo(798,583);
+		ctx.lineTo(808,573);
+		ctx.lineTo(823,584);
+		ctx.lineTo(836,588);
+		ctx.lineTo(857,589);
+		ctx.lineTo(852,600);
+		ctx.lineTo(861,616);
+		ctx.lineTo(860,628);
+		ctx.lineTo(869,635);
+		ctx.lineTo(855,651);
+		ctx.lineTo(827,689);
+		ctx.lineTo(806,676);
+		ctx.lineTo(785,677);
+		ctx.lineTo(772,670);
+		ctx.lineTo(753,672);
+		ctx.lineTo(737,681);
+		ctx.lineTo(718,681);
+		ctx.lineTo(725,666);
+		ctx.lineTo(755,649);
+		ctx.lineTo(759,640);
+		ctx.lineTo(730,641);
+		ctx.lineTo(740,629);
+		ctx.lineTo(748,616);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+		
+		// Pennsylinsania
+		ctx.fillStyle = purple;
+		ctx.beginPath();
+		ctx.moveTo(761,513);
+		ctx.lineTo(847,496);
+		ctx.lineTo(860,508);
+		ctx.lineTo(880,514);
+		ctx.lineTo(877,528);
+		ctx.lineTo(881,548);
+		ctx.lineTo(865,570);
+		ctx.lineTo(856,575);
+		ctx.lineTo(857,588);
+		ctx.lineTo(834,588);
+		ctx.lineTo(823,582);
+		ctx.lineTo(808,573);
+		ctx.lineTo(798,583);
+		ctx.lineTo(782,610);
+		ctx.lineTo(770,620);
+		ctx.lineTo(755,621);
+		ctx.lineTo(738,600);
+		ctx.lineTo(746,590);
+		ctx.lineTo(750,580);
+		ctx.lineTo(766,560);
+		ctx.lineTo(761,513);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();		
+		
+		// New York
+		ctx.fillStyle = purple;
+		ctx.beginPath();
+		ctx.moveTo(772,479);
+		ctx.lineTo(794,475);
+		ctx.lineTo(806,468);
+		ctx.lineTo(815,468);
+		ctx.lineTo(826,458);
+		ctx.lineTo(825,444);
+		ctx.lineTo(840,434);
+		ctx.lineTo(851,444);
+		ctx.lineTo(870,444);
+		ctx.lineTo(883,476);
+		ctx.lineTo(888,485);
+		ctx.lineTo(912,483);
+		ctx.lineTo(901,505);
+		ctx.lineTo(882,513);
+		ctx.lineTo(861,508);
+		ctx.lineTo(847,497);
+		ctx.lineTo(769,508);
+		ctx.lineTo(778,492);
+		ctx.lineTo(769,492);
+		ctx.lineTo(772,479);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+				
+		// New Englandor
+		ctx.fillStyle = red;
+		ctx.beginPath();
+		ctx.moveTo(851,418);
+		ctx.lineTo(891,403);
+		ctx.lineTo(897,398);
+		ctx.lineTo(892,366);
+		ctx.lineTo(909,338);
+		ctx.lineTo(933,304);
+		ctx.lineTo(957,290);
+		ctx.lineTo(972,289);
+		ctx.lineTo(979,300);
+		ctx.lineTo(961,320);
+		ctx.lineTo(976,322);
+		ctx.lineTo(977,332);
+		ctx.lineTo(982,334);
+		ctx.lineTo(987,343);
+		ctx.lineTo(1003,349);
+		ctx.lineTo(1025,348);
+		ctx.lineTo(1047,342);
+		ctx.lineTo(1046,353);
+		ctx.lineTo(1029,370);
+		ctx.lineTo(1015,379);
+		ctx.lineTo(1008,400);
+		ctx.lineTo(999,410);
+		ctx.lineTo(993,410);
+		ctx.lineTo(988,402);
+		ctx.lineTo(989,390);
+		ctx.lineTo(997,370);
+		ctx.lineTo(988,372);
+		ctx.lineTo(967,385);
+		ctx.lineTo(963,397);
+		ctx.lineTo(949,407);
+		ctx.lineTo(936,424);
+		ctx.lineTo(933,435);
+		ctx.lineTo(939,437);
+		ctx.lineTo(939,469);
+		ctx.lineTo(948,470);
+		ctx.lineTo(945,480);
+		ctx.lineTo(931,487);
+		ctx.lineTo(917,477);
+		ctx.lineTo(912,484);
+		ctx.lineTo(888,484);
+		ctx.lineTo(880,474);
+		ctx.lineTo(871,445);
+		ctx.lineTo(849,445);
+		ctx.lineTo(842,428);
+		ctx.lineTo(851,418);
+
+		ctx.moveTo(1067,198);
+		ctx.lineTo(1075,230);
+		ctx.lineTo(1084,219);
+		ctx.lineTo(1107,225);
+		ctx.lineTo(1119,216);
+		ctx.lineTo(1120,229);
+		ctx.lineTo(1153,252);
+		ctx.lineTo(1155,265);
+		ctx.lineTo(1145,264);
+		ctx.lineTo(1137,258);
+		ctx.lineTo(1134,253);
+		ctx.lineTo(1119,269);
+		ctx.lineTo(1118,277);
+		ctx.lineTo(1109,260);
+		ctx.lineTo(1101,271);
+		ctx.lineTo(1081,278);
+		ctx.lineTo(1065,288);
+		ctx.lineTo(1055,281);
+		ctx.lineTo(1061,269);
+		ctx.lineTo(1061,264);
+		ctx.lineTo(1058,252);
+		ctx.lineTo(1062,245);
+		ctx.lineTo(1059,230);
+		ctx.lineTo(1067,198);
+		
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+		
+	</script>
+</canvas>
+			<h4>The Fly-over Clique cannot lose any more land but mounts a fierceful resistance!</h4>
+			<ul>
+				<li>Sulpizi, Mike, and Stephan put up an absolutely dismal (and shameful) defense of Ontario against Julian the impotent, Matt the weak, and the capable Jeff.</li>
+				<li>Avi and Nick fought amongst themselves and Nick emerged victorious, though --</li>
+				<li>Orkun defeated Adam in the battle for Quebec, Josh defeated Dexter in order to save Quebec from the Fly-over Clique and --</li>
+				<li>Gannon defeated Tyler in order to take New England-land from the Clique.</li>
+			</ul>
             <p class="rules">Each territory is worth 10pts</p>
         </div>
         <div class="box red_back">
@@ -26,7 +788,18 @@
                     <th>Wk2</th>
                     <th>Wk3</th>
                     <th>Wk4</th>
+                    <th>Wk5</th>
                     <th>Total</th>
+                </tr>
+				<tr>
+                    <td>Josh</td>
+                    <td class='purple'>Eastern</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>-</td>
+                    <td>20</td>
                 </tr>
                 <tr>
                     <td>Stephan</td>
@@ -34,8 +807,19 @@
                     <td>7</td>
                     <td>4</td>
                     <td>5</td>
+                    <td>2</td>
                     <td>-</td>
-                    <td>16</td>
+                    <td>18</td>
+                </tr>
+				<tr>
+                    <td>Adam</td>
+                    <td class='purple'>Eastern</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>-</td>
+                    <td>14</td>
                 </tr>
                 <tr>
                     <td>Michael</td>
@@ -43,26 +827,9 @@
                     <td>2</td>
                     <td>7</td>
                     <td>4</td>
+                    <td>0</td>
                     <td>-</td>
                     <td>13</td>
-                </tr>
-                <tr>
-                    <td>Josh</td>
-                    <td class='purple'>Eastern</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>8</td>
-                    <td>-</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <td>Adam</td>
-                    <td class='purple'>Eastern</td>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>-</td>
-                    <td>8</td>
                 </tr>
                 <tr>
                     <td>Orkun</td>
@@ -70,8 +837,19 @@
                     <td>3</td>
                     <td>3</td>
                     <td>2</td>
+                    <td>2</td>
                     <td>-</td>
-                    <td>8</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Gannon</td>
+                    <td class='red'>Western</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>-</td>
+                    <td>9</td>
                 </tr>
                 <tr>
                     <td>Julian</td>
@@ -79,14 +857,26 @@
                     <td>4</td>
                     <td>3</td>
                     <td>1</td>
+                    <td>0</td>
                     <td>-</td>
                     <td>8</td>
+                </tr>
+                <tr>
+                    <td>Nick</td>
+                    <td>Central</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>-</td>
+                    <td>5</td>
                 </tr>
                 <tr>
                     <td>Sulpizi</td>
                     <td class='red'>Western</td>
                     <td>0</td>
                     <td>4</td>
+                    <td>0</td>
                     <td>0</td>
                     <td>-</td>
                     <td>4</td>
@@ -97,15 +887,17 @@
                     <td>0</td>
                     <td>2</td>
                     <td>2</td>
+                    <td>0</td>
                     <td>-</td>
                     <td>4</td>
                 </tr>
                 <tr>
-                    <td>Gannon</td>
-                    <td class='red'>Western</td>
-                    <td>2</td>
+                    <td>Tyler</td>
+                    <td>Central</td>
                     <td>2</td>
                     <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
                     <td>-</td>
                     <td>4</td>
                 </tr>
@@ -115,26 +907,9 @@
                     <td>1</td>
                     <td>1</td>
                     <td>1</td>
-                    <td>-</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Nick</td>
-                    <td>Central</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>-</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Tyler</td>
-                    <td>Central</td>
-                    <td>2</td>
-                    <td>0</td>
                     <td>0</td>
                     <td>-</td>
-                    <td>2</td>
+                    <td>3</td>
                 </tr>
                 <tr>
                     <td>Jeff</td>
@@ -142,13 +917,15 @@
                     <td>0</td>
                     <td>0</td>
                     <td>0</td>
+                    <td>2</td>
                     <td>-</td>
-                    <td>0</td>
+                    <td>2</td>
                 </tr>
                 <tr>
                     <td>Dexter</td>
                     <td>Central</td>
                     <td>-1</td>
+                    <td>0</td>
                     <td>0</td>
                     <td>0</td>
                     <td>-</td>
@@ -158,7 +935,7 @@
         </div>
         <div class="box red_back">
             <h3 class="red">Western Rush Kingdom</h3>
-            <h4 class="red">140+37 points</h4>
+            <h4 class="red">140+44 points</h4>
             <div class="team">
                 <div class="soldier">
                     <img src="images/sulp_standing_uruk.png">
@@ -180,7 +957,7 @@
         </div>
         <div class="box purple_back">
             <h3 class="purple">Eastern Empire</h3>
-            <h4 class="purple">90+32 points</h4>
+            <h4 class="purple">100+48 points</h4>
             <div class="team">
                 <div class="soldier">
                     <img src="images/matt_stand.png">
@@ -206,7 +983,7 @@
         </div>
         <div class="box white_back">
             <h3 class="white">Fly-over Clique</h3>
-            <h4 class="white">10+15 points</h4>
+            <h4 class="white">0+21 points</h4>
             <div class="team">
                 <div class="soldier">
                     <img src="images/tyler_standing.png">
@@ -232,7 +1009,7 @@
         </div>
         <div class="box white_back">
             <h3>This Week's Reward</h3>
-            <h5>Winner Picks From:</h5>
+            <h5>Josh and Gannon:</h5>
             <div style="display: flex; align-items: flex-end; justify-content: center;">
             <div><img class="reward" src="images/ballmace.png"/><h4>A Floppy Flail Mace</h4></div>
             <div><img class="reward" src="images/beardaxe.png"/><h4>A Crypt-uniting Bearded Axe</h4></div>
@@ -240,41 +1017,41 @@
         </div>
         <div class="box blue_back">
             <div style="display: flex; justify-content: center;">
-                <img class="joust flipper" src="images/horsepole.png" style="margin: 0 -25px; background-image: url('images/dex_cheer.png'); background-size: 100%">
+                <img class="joust fade flipper" src="images/horsepole.png" style="margin: 0 -25px; background-image: url('images/dex_cheer.png'); background-size: 100%">
                 <img class="joust" src="images/horsepole.png" style="margin: 0 0 0 -25px; background-image: url('images/josh_cheer_flamberge.png'); background-size: 100%">
-                <img class="joust flipper" src="images/horsepole.png" style="margin: 0 -25px 0 0; background-image: url('images/tyler_cheer.png'); background-size: 100%">
-                <img class="joust" src="images/horsepole.png" style="margin: 0 -25px; background-image: url('images/gannon_cheer.png'); background-size: 100%">
+                <img class="joust fade flipper" src="images/horsepole.png" style="margin: 0 -25px 0 0; background-image: url('images/tyler_cheer.png'); background-size: 100%">
+                <img class="joust fade" src="images/horsepole.png" style="margin: 0 -25px; background-image: url('images/gannon_cheer.png'); background-size: 100%">
             </div>
             <h3>Jousting</h3>
             <h4>Two round sudden-death!</h4>
-            <p class="facing">Dexter<span class="vs">vs.</span>Josh<br />
-                Tyler<span class="vs">vs.</span>Gannon</p>
-            <!--<hr />-->
-            <!--<p class="facing"><span class="fade">Avi (30)</span><span class="points">+1</span> <span class="vs">vs.</span> Adam (42)<span class="points">+3</span> </p>-->
+            <p class="facing"><span class='fade'>Dexter</span><span class="vs">vs.</span>Josh<br />
+                <span class='fade'>Tyler</span><span class="vs">vs.</span>Gannon</p>
+            <hr />
+            <p class="facing"><span class="fade">Gannon</span><span class="points">+1</span><span class="vs">vs.</span> Josh<span class="points">+3</span> </p>
             <p class="rules">QB and 3WRs face off in first round, winner's RB/TE/FL face off for the win<br />1st: 3pts; 2nd: 1pt</p>
         </div>
         <div class="box purple_back">
             <img class="highlight" src="images/melee2.png" />
             <h3>Melee</h3>
             <h4>Team battle!</h4>
-            <p class="facing">Matt <span class="and">&</span> Sulpizi <span class="and">&</span> Avi<br> <span class="vs">vs.</span><br> Stephan <span class="and">&</span> Jeff <span class="and">&</span> Nick</p>
+            <p class="facing"><span class='fade'>Matt <span class="and">&</span> Sulpizi <span class="and">&</span> Avi</span><br><span class="vs">vs.</span><br> Stephan <span class="and">&</span> Jeff <span class="and">&</span> Nick<span class="points">+2</span></p>
             <p class="rules">Winners 2pts each</p>
         </div>
         <div class="box red_back">
             <img class="highlight" src="images/archery.png" />
             <h3>Archery</h3>
             <h4>wk2: best Kicker wins!</h4>
-            <p class="facing">Adam<span class="vs">vs.</span>Julian<span class="vs">vs.</span>Orkun<span class="vs">vs.</span>Michael</p>
+            <p class="facing">Adam<span class="points">+3</span><span class="vs">vs.</span>Julian<span class="vs">vs.</span>Orkun<span class="points">+2</span><span class="vs">vs.</span>Michael</p>
             <p class="rules">1st: 3pts; 2nd: 2pts; 4th -1pts;</p>
         </div>
         <div class="box white_back">
             <h4>Other Points</h4>
             <ul class="rules">
                 <p>Weekly:</p>
-                <li>First: 5 points</li>
-                <li>Second: 4 points</li>
-                <li>Third: 3 points</li>
-                <li>Fourth: 2 points</li>
+                <li>First: 5 points (JOSH)</li>
+                <li>Second: 4 points (GANNON)</li>
+                <li>Third: 3 points (ADAM)</li>
+                <li>Fourth: 2 points (TYLER)</li>
             </ul>
         </div>
     </div>
